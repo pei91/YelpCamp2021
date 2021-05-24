@@ -2,7 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 import postRoutes from "./routes/posts.js";
 
 const app = express();
@@ -16,10 +16,10 @@ app.get("/", (req, res) => {
   res.send("Hello to YelpCamp API");
 });
 
-const result = dotenv.config();
-if (result.error) {
-  throw result.error;
-}
+// const result = dotenv.config();
+// if (result.error) {
+//   throw result.error;
+// }
 
 const PORT = process.env.PORT || 5000;
 

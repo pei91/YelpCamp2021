@@ -103,7 +103,7 @@ const Form = ({ currentId, setCurrentId }) => {
         <TextField
           name="creator"
           variant="outlined"
-          // label="Price"
+          label="Price"
           fullWidth
           value={postData.price}
           onChange={(event) =>

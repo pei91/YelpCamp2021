@@ -51,7 +51,7 @@ const Campground = ({ campground, setCurrentId }) => {
       </Typography>
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          {campground.message}
+          {campground.description}
         </Typography>
       </CardContent>
       <CardActions className={classes.cardActions}>
